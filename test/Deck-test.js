@@ -47,5 +47,4 @@ describe("Deck", function () {
   it("should have a deck length", function () {
     expect(deck.countCards()).to.equal(3);
   });
-
 });
