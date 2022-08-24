@@ -86,7 +86,7 @@ describe("Round", function () {
   it('should provide feedback to answers', function() {
     expect(round.takeTurn(`object`)).to.equal('Correct!')
     expect(round.takeTurn(`Object.values()`)).to.equal('Incorrect!')
-  })
+  });
 
   it('should calculate percentage of a users correct guesses', function() {
     round.takeTurn(`object`)
@@ -95,7 +95,7 @@ describe("Round", function () {
     expect(round.calculatePercentCorrect()).to.equal(50)
     round.takeTurn(`mutator method`)
     expect(round.calculatePercentCorrect()).to.deep.equal(66)
-  })
+  });
 
   
 });

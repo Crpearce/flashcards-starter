@@ -4,20 +4,13 @@ class Turn {
         this.card = card;
     };
 
-    returnGuess() {
-        return this.guess;
-    };
+    returnGuess = () => this.guess;
 
-    returnCard() {
-        return this.card;
-    };
+    returnCard = () => this.card;
+    
+    evaluateGuess = () => this.guess === this.card.correctAnswer ? true : false;
 
-    evaluateGuess() {
-        return this.guess === this.card.correctAnswer ? true : false;
-    };
-    giveFeedback() {
-        return this.evaluateGuess() === true ? 'Correct!' : 'Incorrect!';
-    };
+    giveFeedback = () => this.evaluateGuess() === true ? 'Correct!' : 'Incorrect!';
 };
 
 module.exports = Turn;
