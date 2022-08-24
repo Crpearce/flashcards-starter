@@ -23,7 +23,10 @@ class Round {
       return Math.trunc(result);
   }
 
-  endRound = () => console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`);
+  endRound = () => {
+    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
+    console.timeLog('Game Run Time')
+  };
 }
 
 module.exports = Round;
