@@ -4,11 +4,26 @@ const util = require("./util");
 
 const Round = require("../src/Round");
 const Deck = require("../src/Deck");
-const Card = require("../src/Card");
 
 class Game {
   constructor() {
   }
+  
+  start = () => {
+    this.startRound();
+    this.printMessage(this.createDeck(), this.startRound());
+    this.printQuestion(this.startRound());
+  };
+
+  startRound = () => {
+    let round = new Round(this.createDeck());
+    return round;
+  };
+
+  createDeck = () => {
+    let deck = new Deck(this.createCards());
+    return deck;
+  };
 
   createCards = () => {
     let cards = prototypeQuestions.reduce((acc, card) => {
@@ -17,21 +32,6 @@ class Game {
     }, []);
     this.cards = cards;
     return cards;
-  };
-  createDeck = () => {
-    let deck = new Deck(this.createCards());
-    return deck;
-  };
-  
-  startRound = () => {
-    let round = new Round(this.createDeck());
-    return round;
-  };
-
-  start = () => {
-    this.startRound();
-    this.printMessage(this.createDeck(), this.startRound());
-    this.printQuestion(this.startRound());
   };
   
   printQuestion = (round) => util.main(round);
