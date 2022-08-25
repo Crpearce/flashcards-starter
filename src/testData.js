@@ -15,6 +15,4 @@ const testData = [{
     "correctAnswer": "mutator method"
   }]
 
-  module.exports = {
-    testData 
-  }
+  module.exports = { testData }

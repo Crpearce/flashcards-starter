@@ -11,8 +11,8 @@ class Round {
 
   takeTurn = (userGuess) => {
     let turn = new Turn(userGuess, this.returnCurrentCard());
-    let total = 0;
-    !turn.evaluateGuess() ? this.incorrectGuesses.push(this.returnCurrentCard()) : total++;
+    let correct = 0;
+    !turn.evaluateGuess() ? this.incorrectGuesses.push(this.returnCurrentCard()) : correct++;
     this.turns++;
     this.deck.cards.shift();
     return turn.giveFeedback();
@@ -26,6 +26,7 @@ class Round {
   endRound = () => {
     console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
     console.timeLog('Game Run Time')
+    return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
   };
 }
 
