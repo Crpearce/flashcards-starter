@@ -27,11 +27,7 @@ class Game {
   };
 
   createCards = () => {
-    let cards = prototypeQuestions.reduce((acc, card) => {
-      acc.push(card);
-      return acc;
-    }, []);
-    this.cards = cards;
+    let cards = prototypeQuestions.map(card => card)
     return cards;
   };
   
