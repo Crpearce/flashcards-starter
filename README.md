@@ -1,71 +1,48 @@
-# FlashCards Starter Kit
+# Flash Cards
 
-## Fork This Repo
-
-On the top right corner of this page, click the **Fork** button.
-
-## Setup
-
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
-
-```bash
-git clone [remote-address] [what you want to name the repo]
-```
-
-Once you have cloned the repo, change into the directory and install the library dependencies. Run:
-
-```bash
-npm install
-```
-
-To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
-
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
-
-```bash
-Your project is running...
-```
-
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
+## Abstract
+Ever wanted to create a flashcards set to study?  This project creates a program that will simulate a set of flash cards to study while working through the command line.  The user will have the ablility to see questions, take a guess, receive feedback, and also see a final score of correct guesses at the end of the round.  By focusing on TDD, we are able to test each piece of the object-oriended application.  Goals for the project included implementing ES6 classes, using modular reusable code that follows the SRP, and implementing a robust testing suite. 
 
 
-## Where to Add Your Code
+## Set Up
+- Clone down the Repo `git clone` https://github.com/turingschool-examples/flashcards-starter
+- In your terminal, `git clone git@github.com:turingschool-examples/flashcards-starter.git`
+- Cd into your directory
+- Run `npm install`
+- Run `node index.js` to run game
 
-### JavaScript
 
-**Create all of your feature code files in the `src` directory.**
+## Project Specs
+The project specs and rubric for Flash Cards can be found [here](https://frontend.turing.edu/projects/flash-cards.html)
 
-We will be using the `module.exports` and `require` syntax to share code across files.
 
-## How to View Your Code in Action
+## Technologies Used
+- Javascript
+- Mocha
+- Chai
 
-Once you are working through Iteration 3, you will want to start your server to test your functionality.
-In the terminal, run:
+## Challenges
+- Class Interaction
+- Nested Data
 
-```bash
-node index.js
-```
+## Wins
+- TDD
+- ES6
+- Completing Timer extension to determine length of a round
 
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
+## Future Extensions
+- Allow user to select from multiple decks of questions
+- At the end of the game, create a report card that would detail any answers that the user got wrong as well as how many tries each question took.
+- make a user repeat the round if a score is below a certain percentage
+- Create login page.
+
+## Contributors
+
+- Colby Pearce [LinkedIn](https://www.linkedin.com/in/colby-pearce1/) [GitHub]
+
 
 ![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
 
 ---
-
-## Test Files Organization
-
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
-
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
-
-## Running Your Tests
-
-Run your test suite using the command:
-
-```bash
-npm test
-```
-
-The test results will output to the terminal.
 
 

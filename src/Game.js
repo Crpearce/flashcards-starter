@@ -7,6 +7,7 @@ const Deck = require("../src/Deck");
 
 class Game {
   constructor() {
+    this.currentRound;
   }
   
   start = () => {
@@ -16,8 +17,8 @@ class Game {
   };
 
   startRound = () => {
-    let round = new Round(this.createDeck());
-    return round;
+    this.currentRound = new Round(this.createDeck());
+    return this.currentRound;
   };
 
   createDeck = () => {

@@ -32,6 +32,11 @@ describe("Game", function () {
     expect(game).to.be.an.instanceof(Game);
   });
 
+  it('Should create the cards at the start of a new game', () => {
+    const cards = game.createCards()
+    expect(cards).to.be.an('array')
+})
+
   it("Should be an instance of Deck", () => {
     expect(deck).to.be.an.instanceOf(Deck);
   });
