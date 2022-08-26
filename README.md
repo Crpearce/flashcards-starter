@@ -11,6 +11,7 @@ Ever wanted to create a flashcards set to study?  This project creates a program
 - Run `npm install`
 - Run `node index.js` to run game
 
+![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
 
 ## Project Specs
 The project specs and rubric for Flash Cards can be found [here](https://frontend.turing.edu/projects/flash-cards.html)
@@ -39,9 +40,6 @@ The project specs and rubric for Flash Cards can be found [here](https://fronten
 ## Contributors
 
 - Colby Pearce [LinkedIn](https://www.linkedin.com/in/colby-pearce1/) [GitHub]
-
-
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
 
 ---
 
